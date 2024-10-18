@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity=
+"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+
+    <script src="app.js"></script>
+
+    <title>To Do List using Javascript</title>
+</head>
+
+<body> 
+
+    <div class="container">
+        <div class="row" style="padding-top: 50px;margin: auto;margin-left: 500px;">
+            <h4><strong>Todo List</strong></h4>
+        </div>
+    </div>
+
+    <div class="container mt-3" style="background-color: #ededeb;padding-bottom: 50px;margin: auto;width:600px;padding:30px;padding-left:100px">
+        <h5>Add Items</h5>
+        <label id="lblsuccess" class="text-info" style="display: none;">
+        </label>
+        
+        <form id="addForm">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <input type="text" onkeyup="toggleButton(this, 'submit')" class="form-control" id="item">
+                </div>
+
+                <div class="col-lg-5 col-md-5 col-sm-5">
+                <input type="submit" class="btn btn-primary" id="submit" value="Submit" disabled>
+                </div>
+            </div>
+        </form>
+
+        <h5 class="mt-4">Tasks</h5>
+
+        <form id="addForm">
+            <ul class="list-group" id="items" style="width:400px"></ul>
+        </form>
+    </div>
+</body>
+
+</html>
